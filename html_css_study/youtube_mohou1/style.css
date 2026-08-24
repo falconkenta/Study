@@ -39,6 +39,52 @@ header {
 /*menubar section*/
 header .menu-bar {
     position: absolute;
+    top: 30vh;
+    right: -200px;
+    background: #000;
+    width: 170px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+}
+
+header .menu-bar.active {
+    right: 20px;
+    opacity: 1;
+}
+
+header .menu-bar li {
+    margin-bottom: 3rem;
+}
+
+header .menu-bar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+header .menu-bar li a:hover {
+    color: aquamarine;
+}
+
+header .book-open-btn {
+    display: none;
+}
+
+header .book-open-btn.active {
+    display: block;
+}
+
+header .book-close-btn {
+    display: block;
+}
+
+header .book-close-btn.active {
+    display: none;
 }
 
 section{
